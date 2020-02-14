@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h1>Reset Pass</h1>
+
+<h3>{{username}}</h3>
+<form method="post">
+    <input type="password" placeholder="Password:" name="password" />
+    <input type="submit" value="Submit" />
+</form>
+{% endblock %}

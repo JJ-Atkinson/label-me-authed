@@ -9,6 +9,7 @@
                  [buddy/buddy-sign "3.1.0"]
                  [ch.qos.logback/logback-classic "1.2.3"]
                  [cheshire "5.9.0"]
+                 [hiccup "1.0.5"]
                  [clj-oauth "1.5.5"]
                  [clojure.java-time "0.3.2"]
                  [com.cognitect/transit-clj "0.8.319"]

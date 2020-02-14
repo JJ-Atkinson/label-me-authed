@@ -10,6 +10,13 @@ UPDATE users
 SET first_name = :first_name, last_name = :last_name, email = :email
 WHERE id = :id
 
+
+-- :name update-user-pass! :! :n
+-- :doc updates an existing user record
+UPDATE users
+SET pass = :pass 
+WHERE email = :email
+
 -- :name get-user :? :1
 -- :doc retrieves a user record given the id
 SELECT * FROM users
@@ -19,3 +26,8 @@ WHERE id = :id
 -- :doc deletes a user record given the id
 DELETE FROM users
 WHERE id = :id
+
+
+-- :name get-hashed-user-pw :? :1
+SELECT pass FROM users
+WHERE email = :email
